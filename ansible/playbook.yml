@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  pre_tasks:
+    - name: Install package dependencies.
+      package:
+        name: ["unzip"]
+  roles:
+    - role: geerlingguy.java
+    - role: lrk.sonarqube

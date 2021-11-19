@@ -1,0 +1,5 @@
+---
+- src: geerlingguy.java # https://galaxy.ansible.com/geerlingguy/java
+  version: 1.10.0
+- src: lrk.sonarqube # https://galaxy.ansible.com/lrk/sonarqube
+  version: v1.1.0
