@@ -1,4 +1,4 @@
 ---
 sonarqube_host: 192.168.98.122
 
-sonar_version: 9.1.0.47736
+sonar_version: 9.1.0.47736  # list of binaries https://binaries.sonarsource.com/Distribution/sonarqube/
