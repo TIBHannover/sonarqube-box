@@ -5,7 +5,7 @@ Install an SonarQube instance via ansible. Test it locally with Vagrant and Virt
 Documentation see also
 * https://www.sonarqube.org/
 
-**Note**: only for testing / evaluation purposes, because an inmemory-db is used. Ansible-Vars have to be changed for production - see https://galaxy.ansible.com/lrk/sonarqube
+**Note**: config see also https://galaxy.ansible.com/lrk/sonarqube
 
 ## Installation on local system for testing
 

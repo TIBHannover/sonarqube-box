@@ -2,3 +2,8 @@
 sonarqube_host: 192.168.98.122
 
 sonar_version: 9.1.0.47736  # list of binaries https://binaries.sonarsource.com/Distribution/sonarqube/
+
+sonar_db_embedded: false
+sonar_jdbc_url: jdbc:postgresql://localhost/sonar
+sonar_db_user: "sonar"
+sonar_db_pass: "changeme"

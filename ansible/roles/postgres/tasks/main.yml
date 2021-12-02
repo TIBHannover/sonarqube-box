@@ -1,0 +1,28 @@
+---
+- name: Install PostgreSQL server package
+  become: yes
+  package:
+    name: postgresql
+    state: present
+  
+- name: Ensure postgres python packages are present
+  become: yes
+  package:
+    name: [ "python-psycopg2", "acl" ]
+
+- name: Create a new database
+  become: yes
+  become_user: postgres
+  postgresql_db:
+    name: sonar
+    encoding: 'utf8'
+    state: present
+
+- name: Create database user
+  become: yes
+  become_user: postgres
+  postgresql_user:
+    db: sonar
+    name: '{{ sonar_db_user }}'
+    password: '{{ sonar_db_pass }}'
+    priv: 'ALL'

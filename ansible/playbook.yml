@@ -7,4 +7,6 @@
         name: ["unzip"]
   roles:
     - role: geerlingguy.java
+    - role: postgres
+      when: not sonar_db_embedded
     - role: lrk.sonarqube
