@@ -5,5 +5,6 @@ sonar_version: 9.1.0.47736  # list of binaries https://binaries.sonarsource.com/
 
 sonar_db_embedded: false
 sonar_jdbc_url: jdbc:postgresql://localhost/sonar
-sonar_db_user: "sonar"
-sonar_db_pass: "changeme"
+sonar_db_user: sonar
+sonar_db_pass: changeme
+postgres_tmp_password: changeme
